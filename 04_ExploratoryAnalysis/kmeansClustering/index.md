@@ -67,7 +67,7 @@ plot(x,y,col="blue",pch=19,cex=2)
 text(x+0.05,y+0.05,labels=as.character(1:12))
 ```
 
-![plot of chunk createData](assets/fig/createData-1.png) 
+![plot of chunk createData](fig/createData-1.png) 
 
 
 ---
@@ -75,26 +75,26 @@ text(x+0.05,y+0.05,labels=as.character(1:12))
 ## K-means clustering -  starting centroids
 
 
-![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png) 
+![plot of chunk unnamed-chunk-1](fig/unnamed-chunk-1-1.png) 
 
 ---
 
 ## K-means clustering -  assign to closest centroid
 
-![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](fig/unnamed-chunk-2-1.png) 
 
 ---
 
 ## K-means clustering -  recalculate centroids
 
-![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](fig/unnamed-chunk-3-1.png) 
 
 
 ---
 
 ## K-means clustering -  reassign values
 
-![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](fig/unnamed-chunk-4-1.png) 
 
 
 
@@ -102,7 +102,7 @@ text(x+0.05,y+0.05,labels=as.character(1:12))
 
 ## K-means clustering -  update centroids
 
-![plot of chunk unnamed-chunk-5](assets/fig/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-5](fig/unnamed-chunk-5-1.png) 
 
 
 ---
@@ -143,7 +143,7 @@ plot(x,y,col=kmeansObj$cluster,pch=19,cex=2)
 points(kmeansObj$centers,col=1:3,pch=3,cex=3,lwd=3)
 ```
 
-![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-6](fig/unnamed-chunk-6-1.png) 
 
 ---
 
@@ -159,7 +159,7 @@ image(t(dataMatrix)[,nrow(dataMatrix):1],yaxt="n")
 image(t(dataMatrix)[,order(kmeansObj$cluster)],yaxt="n")
 ```
 
-![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](fig/unnamed-chunk-7-1.png) 
 
 
 
